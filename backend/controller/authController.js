@@ -4,6 +4,7 @@ const bcrypt = require("bcryptjs");
 const UserDto = require("../dto/user");
 const JWTService = require('../services/JWTService');
 const RefreshToken = require('../models/token');
+
 const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,25}$/;
 
 const authController = {
